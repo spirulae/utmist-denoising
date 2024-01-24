@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    margin: 2em 0;
+}
+
+h1, h2 {
+    margin: 0.5em 0;
+}
+
+p {
+    line-height: 1.5em;
+    margin: 0.5em 0;
+}
+
+body div {
+    width: 95%;
+    max-width: 960px;
+    display: inline-block;
+    text-align: left;
+}
+
+hr {
+    max-width: 960px;
+}
+
+#links a {
+    color: blue;
+    text-decoration: none;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
+#demos a {
+    display: inline-block;
+    height: 0px;
+}
+
+.demo {
+    width: 230px;
+    max-width: 48%;
+    display: inline-block;
+    margin: 0.5%;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.demo:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}  
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
