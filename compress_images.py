@@ -8,6 +8,8 @@ import os
 image_dir = 'img_raw/'
 output_dir = 'img/'
 
+os.makedirs(output_dir, exist_ok=True)
+
 image_files = [file for file in os.listdir(image_dir)
                if file.lower().endswith(('.jpg', '.jpeg', '.png'))]
 
@@ -29,5 +31,4 @@ for fi in range(len(image_files)):
     if sc < 1.0:
         img = img.resize((int(sc*img.size[0]+0.5), int(sc*img.size[1]+0.5)))
 
-    img.save(output_file, format="jpeg", optimize=True, quality=75, progressive=True
-
+    img.save(output_file, format="jpeg", optimize=True, quality=75, progressive=True)

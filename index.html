@@ -10,7 +10,13 @@
 <body>
 
     <h1>Denoising Renderings using Deep Learning</h1>
-    <p style="color:#555">Winter Project Showcase 2023-24 | UTMIST</p>
+    <p style="color:#555">UTMIST Engineering Project | 2023-2024</p>
+    <hr />
+
+    <div id="demos">
+        <p>Click on an image to view an interactive demo. You can drag to view from different angles, adjust parameter sliders to change the appearance, and edit the equations to change the shape and color.</p>
+        <p>For best experience, use a desktop device with a dedicated graphics card.</p>
+    </div>
     <hr />
 
     <div id="links">
@@ -19,10 +25,10 @@
             <a href="https://utmist.gitlab.io/projects/deep-denoising/" target="_blank">Project Website - project description, proposal, team members</a>
         </p>
         <p>
-            <a href="https://github.com/harry7557558/spirulae" target="_blank">GitHub Repository - source code for the renderer</a>
+            <a href="https://github.com/harry7557558/spirulae" target="_blank">GitHub Repository - source code for the renderer and inference engine</a>
         </p>
         <p>
-            <a href="https://docs.google.com/presentation/d/1x1NUtgB-vwUHjXshisOhjUsiIcbh-N9IAyGQDOB7tqk/edit" target="_blank">Presentation Slides - introduction, video, diagrams</a>
+            <a href="https://docs.google.com/presentation/d/1x1NUtgB-vwUHjXshisOhjUsiIcbh-N9IAyGQDOB7tqk/edit" target="_blank">UTMIST Winter Showcase Presentation Slides - introduction, video, diagrams</a>
         </p>
         <p>
             <a href="https://forms.gle/rYxhperLyvfEwD67A" target="_blank">Feedback Form - Anything you want to tell us!</a>
@@ -34,11 +40,31 @@
 
     <hr />
 
-    <div id="demos">
-        <h2>Interactive Demos</h2>
-        <p>Click on an image to view an interactive demo. You can drag to view from different angles, adjust parameter sliders to change the appearance, and edit the equations to change the shape.</p>
-        <p>Compatibility working in progress. Desktop device recommended.</p>
+    <div id="models">
+        <h2>Denoising Models</h2>
+        <p>
+            <b>➤ Residual U-Net with GAN and Combined Loss</b>
+        </p>
+        <p>
+            <img src="models/denoiser.png" style="max-width:1200px;" />
+        </p>
+        <p>
+            <b>➤
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9138094/" target="_blank">Attention</a>
+                 U-Net with Auxiliary Buffer Input</b>
+        </p>
+        <p>
+            <img src="models/aux.png" style="max-width:950px;" />
+        </p>
+        <p>
+            <b>➤ Discriminator, used for training of both models</b>
+        </p>
+        <p>
+            <img src="models/discriminator.png" style="max-width:800px;" />
+        </p>
     </div>
+
+    <!-- <hr /> -->
 
     <br />
     <br />
